@@ -14,117 +14,127 @@ struct Transition {
 using TransitionTable = std::vector<std::vector<Transition>>;
 using StateList = std::vector<std::string>;
 
-bool CompareTransition(const Transition& move1, const Transition& move2) {
-    return move1.nextState == move2.nextState && move1.output == move2.output;
+struct StateTransition {
+    std::string output;
+    std::string state;
+};
+
+bool AreTransitionsEqual(const StateTransition& transition1, const StateTransition& transition2) {
+    return transition1.state == transition2.state && transition1.output == transition2.output;
 }
 
-std::vector<Transition>::iterator FindTransitonInVector(std::vector<Transition>& vector, const Transition& move) {
-    for (int i = 0; i < vector.size(); ++i) {
-        if (CompareTransition(vector[i], move))
-            return vector.begin() + i;
+std::vector<StateTransition>::iterator FindTransitionInVector(std::vector<StateTransition>& transitions, const StateTransition& transition) {
+    return std::find_if(transitions.begin(), transitions.end(), [&](const StateTransition& t) {
+        return AreTransitionsEqual(t, transition);
+        });
+}
+
+int FindTransitionIndexInVector(const std::vector<StateTransition>& transitions, const StateTransition& transition) {
+    for (size_t i = 0; i < transitions.size(); ++i) {
+        if (AreTransitionsEqual(transitions[i], transition)) {
+            return i;
+        }
     }
-    return vector.end();
+    return -1;
 }
 
 StateList ParseCSVLine(const std::string& line) {
     StateList elements;
     std::stringstream ss(line);
     std::string item;
-
     while (std::getline(ss, item, ';')) {
         elements.push_back(item);
     }
     return elements;
 }
 
-void ConvertMealyToMoore(const std::string& inputFile, const std::string& outputFile) {
+void ReadMealyInputFile(const std::string& inputFile, StateList& inputStates, std::vector<std::string>& inputs, std::vector<std::vector<StateTransition>>& transitionTable, std::vector<StateTransition>& uniqueTransitions) {
     std::ifstream input(inputFile);
-    std::string tempStr;
+    std::string headerLine;
+    getline(input, headerLine);
+    inputStates = ParseCSVLine(headerLine.substr(1));
 
-    getline(input, tempStr);
-    tempStr = tempStr.substr(1); 
+    std::string line;
+    while (getline(input, line)) {
+        std::vector<StateTransition> transitions;
+        inputs.push_back(line.substr(0, line.find(';')));
+        line = line.substr(line.find(';') + 1);
 
-    std::vector<std::string> listOfChars;
-    while (tempStr.find(";") != std::string::npos) {
-        listOfChars.push_back(tempStr.substr(0, tempStr.find(";")));
-        tempStr = tempStr.substr(tempStr.find(";") + 1);
-    }
-    listOfChars.push_back(tempStr); 
+        std::string transitionStr;
+        StateTransition transition;
+        line += ";";
 
-    std::vector<std::vector<Transition>> table;
-    std::vector<std::string> inputs; 
-    std::vector<Transition> distinctTransitions; 
+        while (line.find(';') != std::string::npos) {
+            transitionStr = line.substr(0, line.find(';'));
+            line = line.substr(line.find(';') + 1);
 
-    while (getline(input, tempStr)) {
-        std::vector<Transition> row;
-        inputs.push_back(tempStr.substr(0, tempStr.find(";")));
-        tempStr = tempStr.substr(tempStr.find(";") + 1);
+            transition.output = transitionStr.substr(transitionStr.find('/') + 1);
+            transition.state = transitionStr.substr(0, transitionStr.find('/'));
 
-        std::string tempMove;
-        Transition move;
+            transitions.push_back(transition);
 
-        tempStr += ";";
-        while (tempStr.find(";") != std::string::npos) {
-            tempMove = tempStr.substr(0, tempStr.find(";"));
-            tempStr = tempStr.substr(tempStr.find(";") + 1);
-
-            move.output = tempMove.substr(tempMove.find('/') + 1);
-            move.nextState = tempMove.substr(0, tempMove.find('/'));
-
-            row.push_back(move);
-
-            if (FindTransitonInVector(distinctTransitions, move) == distinctTransitions.end()) {
-                distinctTransitions.push_back(move);
+            if (FindTransitionInVector(uniqueTransitions, transition) == uniqueTransitions.end()) {
+                uniqueTransitions.push_back(transition);
             }
         }
-        table.push_back(row);
+        transitionTable.push_back(transitions);
     }
     input.close();
+}
 
-    std::vector<Transition> sortedQ;
-    while (!distinctTransitions.empty()) {
-        Transition minMove = distinctTransitions[0];
-        for (const auto& move : distinctTransitions) {
-            if (move.nextState < minMove.nextState) {
-                minMove = move;
-            }
-        }
-        sortedQ.push_back(minMove);
-        distinctTransitions.erase(FindTransitonInVector(distinctTransitions, minMove));
-    }
-
-    if (sortedQ[0].nextState != listOfChars[0]) {
-        distinctTransitions.push_back({ "-", listOfChars[0] });
-        distinctTransitions.insert(distinctTransitions.end(), sortedQ.begin(), sortedQ.end());
-    }
-    else {
-        distinctTransitions = sortedQ;
-    }
-
+void WriteMooreOutputFile(const std::string& outputFile, const std::vector<StateTransition>& uniqueTransitions, const std::vector<std::string>& inputs, const std::vector<std::vector<StateTransition>>& transitionTable, const StateList& inputStates) {
     std::ofstream output(outputFile);
 
     output << ";";
-    for (const auto& move : distinctTransitions) {
-        output << move.output << ";";
+    for (const auto& transition : uniqueTransitions) {
+        output << transition.output << ";";
     }
     output << "\n;";
 
-    for (size_t i = 0; i < distinctTransitions.size(); ++i) {
+    for (size_t i = 0; i < uniqueTransitions.size(); ++i) {
         output << "q" << i << ";";
     }
     output << "\n";
 
     for (size_t i = 0; i < inputs.size(); ++i) {
         output << inputs[i] << ";";
-        for (size_t o = 0; o < distinctTransitions.size(); ++o) {
-            const Transition& tempMove = table[i][std::find(listOfChars.begin(), listOfChars.end(), distinctTransitions[o].nextState) - listOfChars.begin()];
-            output << "q" << (FindTransitonInVector(distinctTransitions, tempMove) - distinctTransitions.begin()) << ";";
+        for (const auto& uniqueTransition : uniqueTransitions) {
+            StateTransition tempTransition = transitionTable[i][std::find(inputStates.begin(), inputStates.end(), uniqueTransition.state) - inputStates.begin()];
+            int transitionIndex = FindTransitionIndexInVector(uniqueTransitions, tempTransition);
+            if (transitionIndex != -1) {
+                output << "q" << transitionIndex << ";";
+            }
+            else {
+                output << ";";
+            }
         }
         output << "\n";
     }
 
     output.close();
 }
+
+void SortAndAdjustTransitions(std::vector<StateTransition>& uniqueTransitions, const StateList& inputStates) {
+    std::sort(uniqueTransitions.begin(), uniqueTransitions.end(), [](const StateTransition& a, const StateTransition& b) {
+        return a.state < b.state;
+        });
+
+    if (uniqueTransitions[0].state != inputStates[0]) {
+        uniqueTransitions.insert(uniqueTransitions.begin(), { "-", inputStates[0] });
+    }
+}
+
+void ConvertMealyToMoore(const std::string& inputFile, const std::string& outputFile) {
+    StateList inputStates;
+    std::vector<std::string> inputs;
+    std::vector<std::vector<StateTransition>> transitionTable;
+    std::vector<StateTransition> uniqueTransitions;
+
+    ReadMealyInputFile(inputFile, inputStates, inputs, transitionTable, uniqueTransitions);
+    SortAndAdjustTransitions(uniqueTransitions, inputStates);
+    WriteMooreOutputFile(outputFile, uniqueTransitions, inputs, transitionTable, inputStates);
+}
+
 void ConvertMooreToMealy(const std::string& inputFile, const std::string& outputFile) {
     std::ifstream input(inputFile);
     std::ofstream output(outputFile);
@@ -139,7 +149,7 @@ void ConvertMooreToMealy(const std::string& inputFile, const std::string& output
 
     std::unordered_map<std::string, std::string> stateOutputMap;
     for (size_t i = 0; i < states.size(); ++i) {
-        stateOutputMap[states[i]] = outputs[i]; 
+        stateOutputMap[states[i]] = outputs[i];
     }
 
     while (getline(input, line)) {
@@ -148,7 +158,7 @@ void ConvertMooreToMealy(const std::string& inputFile, const std::string& output
 
         StateList transitions = ParseCSVLine(line);
         for (const auto& state : transitions) {
-            output << state << "/" << stateOutputMap[state] << ";"; 
+            output << state << "/" << stateOutputMap[state] << ";";
         }
         output << "\n";
     }
@@ -170,7 +180,7 @@ int main(int argc, char* argv[]) {
         ConvertMooreToMealy(argv[2], argv[3]);
     }
     else {
-        std::cerr << "Invalid mode. Use 'mealy-to-moore' or 'moore-to-mealy'.\n";
+        std::cerr << "Invalid mode. Use '1' for Mealy-to-Moore or '2' for Moore-to-Mealy.\n";
         return 1;
     }
     return 0;
