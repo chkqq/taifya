@@ -14,6 +14,18 @@ struct Transition {
 using TransitionTable = std::vector<std::vector<Transition>>;
 using StateList = std::vector<std::string>;
 
+bool CompareTransition(const Transition& move1, const Transition& move2) {
+    return move1.nextState == move2.nextState && move1.output == move2.output;
+}
+
+std::vector<Transition>::iterator FindTransitonInVector(std::vector<Transition>& vector, const Transition& move) {
+    for (int i = 0; i < vector.size(); ++i) {
+        if (CompareTransition(vector[i], move))
+            return vector.begin() + i;
+    }
+    return vector.end();
+}
+
 StateList ParseCSVLine(const std::string& line) {
     StateList elements;
     std::stringstream ss(line);
@@ -54,16 +66,17 @@ void ConvertMealyToMoore(const std::string& inputFile, const std::string& output
     TransitionTable table = ParseMealyTable(input, inputs, states);
     input.close();
 
-    std::vector<std::pair<std::string, std::string>> distinctTransitions;
+    std::vector<Transition> distinctTransitions;
     std::unordered_map<std::string, int> stateMapping;
 
     for (const auto& row : table) {
         for (const auto& transition : row) {
+            // Находим уникальные переходы по состояниям и выходам
             auto it = std::find_if(distinctTransitions.begin(), distinctTransitions.end(),
-                [&](const auto& pair) { return pair.first == transition.nextState && pair.second == transition.output; });
+                [&](const Transition& t) { return CompareTransition(t, transition); });
 
             if (it == distinctTransitions.end()) {
-                distinctTransitions.emplace_back(transition.nextState, transition.output);
+                distinctTransitions.push_back(transition);
                 stateMapping[transition.nextState + "/" + transition.output] = distinctTransitions.size() - 1;
             }
         }
@@ -72,7 +85,7 @@ void ConvertMealyToMoore(const std::string& inputFile, const std::string& output
     std::ofstream output(outputFile);
     output << ";";
     for (const auto& transitionPair : distinctTransitions) {
-        output << transitionPair.second << ";";
+        output << transitionPair.output << ";";
     }
 
     output << "\n;";
@@ -82,11 +95,11 @@ void ConvertMealyToMoore(const std::string& inputFile, const std::string& output
     }
     output << "\n";
 
-    for (size_t i = 0; i < inputs.size(); ++i) {
+    for (size_t i = 0; i < inputs.size(); i++) {
         output << inputs[i] << ";";
-        for (const auto& transition : table[i]) {
-            std::string key = transition.nextState + "/" + transition.output;
-            output << "q" << stateMapping[key] << ";";
+        for (size_t o = 0; o < distinctTransitions.size(); ++o) {
+            const Transition& tempMove = table[i][std::find(inputs.begin(), inputs.end(), distinctTransitions[o].nextState) - inputs.begin()];
+            output << "S" << (FindTransitonInVector(distinctTransitions, tempMove) - distinctTransitions.begin()) << ";";
         }
         output << "\n";
     }
