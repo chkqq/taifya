@@ -37,75 +37,94 @@ StateList ParseCSVLine(const std::string& line) {
     return elements;
 }
 
-TransitionTable ParseMealyTable(std::ifstream& input, StateList& inputs, StateList& states) {
-    std::string line;
-    getline(input, line);
-    states = ParseCSVLine(line.substr(1));
+void ConvertMealyToMoore(const std::string& inputFile, const std::string& outputFile) {
+    std::ifstream input(inputFile);
+    std::string tempStr;
 
-    TransitionTable table;
-    while (getline(input, line)) {
-        inputs.push_back(line.substr(0, line.find(';')));
-        line = line.substr(line.find(';') + 1);
+    getline(input, tempStr);
+    tempStr = tempStr.substr(1); 
 
-        std::stringstream ss(line);
-        std::string cell;
+    std::vector<std::string> listOfChars;
+    while (tempStr.find(";") != std::string::npos) {
+        listOfChars.push_back(tempStr.substr(0, tempStr.find(";")));
+        tempStr = tempStr.substr(tempStr.find(";") + 1);
+    }
+    listOfChars.push_back(tempStr); 
+
+    std::vector<std::vector<Transition>> table;
+    std::vector<std::string> inputs; 
+    std::vector<Transition> distinctTransitions; 
+
+    while (getline(input, tempStr)) {
         std::vector<Transition> row;
+        inputs.push_back(tempStr.substr(0, tempStr.find(";")));
+        tempStr = tempStr.substr(tempStr.find(";") + 1);
 
-        while (std::getline(ss, cell, ';')) {
-            auto slashPos = cell.find('/');
-            row.push_back({ cell.substr(0, slashPos), cell.substr(slashPos + 1) });
+        std::string tempMove;
+        Transition move;
+
+        tempStr += ";";
+        while (tempStr.find(";") != std::string::npos) {
+            tempMove = tempStr.substr(0, tempStr.find(";"));
+            tempStr = tempStr.substr(tempStr.find(";") + 1);
+
+            move.output = tempMove.substr(tempMove.find('/') + 1);
+            move.nextState = tempMove.substr(0, tempMove.find('/'));
+
+            row.push_back(move);
+
+            if (FindTransitonInVector(distinctTransitions, move) == distinctTransitions.end()) {
+                distinctTransitions.push_back(move);
+            }
         }
         table.push_back(row);
     }
-    return table;
-}
-
-void ConvertMealyToMoore(const std::string& inputFile, const std::string& outputFile) {
-    std::ifstream input(inputFile);
-    StateList inputs, states;
-    TransitionTable table = ParseMealyTable(input, inputs, states);
     input.close();
 
-    std::vector<Transition> distinctTransitions;
-    std::unordered_map<std::string, int> stateMapping;
-
-    for (const auto& row : table) {
-        for (const auto& transition : row) {
-            // Находим уникальные переходы по состояниям и выходам
-            auto it = std::find_if(distinctTransitions.begin(), distinctTransitions.end(),
-                [&](const Transition& t) { return CompareTransition(t, transition); });
-
-            if (it == distinctTransitions.end()) {
-                distinctTransitions.push_back(transition);
-                stateMapping[transition.nextState + "/" + transition.output] = distinctTransitions.size() - 1;
+    std::vector<Transition> sortedQ;
+    while (!distinctTransitions.empty()) {
+        Transition minMove = distinctTransitions[0];
+        for (const auto& move : distinctTransitions) {
+            if (move.nextState < minMove.nextState) {
+                minMove = move;
             }
         }
+        sortedQ.push_back(minMove);
+        distinctTransitions.erase(FindTransitonInVector(distinctTransitions, minMove));
+    }
+
+    if (sortedQ[0].nextState != listOfChars[0]) {
+        distinctTransitions.push_back({ "-", listOfChars[0] });
+        distinctTransitions.insert(distinctTransitions.end(), sortedQ.begin(), sortedQ.end());
+    }
+    else {
+        distinctTransitions = sortedQ;
     }
 
     std::ofstream output(outputFile);
-    output << ";";
-    for (const auto& transitionPair : distinctTransitions) {
-        output << transitionPair.output << ";";
-    }
 
+    output << ";";
+    for (const auto& move : distinctTransitions) {
+        output << move.output << ";";
+    }
     output << "\n;";
 
     for (size_t i = 0; i < distinctTransitions.size(); ++i) {
-        output << "S" << i << ";";
+        output << "q" << i << ";";
     }
     output << "\n";
 
-    for (size_t i = 0; i < inputs.size(); i++) {
+    for (size_t i = 0; i < inputs.size(); ++i) {
         output << inputs[i] << ";";
         for (size_t o = 0; o < distinctTransitions.size(); ++o) {
-            const Transition& tempMove = table[i][std::find(inputs.begin(), inputs.end(), distinctTransitions[o].nextState) - inputs.begin()];
-            output << "S" << (FindTransitonInVector(distinctTransitions, tempMove) - distinctTransitions.begin()) << ";";
+            const Transition& tempMove = table[i][std::find(listOfChars.begin(), listOfChars.end(), distinctTransitions[o].nextState) - listOfChars.begin()];
+            output << "q" << (FindTransitonInVector(distinctTransitions, tempMove) - distinctTransitions.begin()) << ";";
         }
         output << "\n";
     }
+
     output.close();
 }
-
 void ConvertMooreToMealy(const std::string& inputFile, const std::string& outputFile) {
     std::ifstream input(inputFile);
     std::ofstream output(outputFile);

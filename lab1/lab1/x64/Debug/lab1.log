@@ -1,3 +1,2 @@
 ﻿  lab1.cpp
-D:\taifyaa\taifya\lab1\lab1\lab1.cpp(80,110): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
   lab1.vcxproj -> D:\taifyaa\taifya\lab1\x64\Debug\lab1.exe
