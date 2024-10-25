@@ -77,7 +77,6 @@ void ProcessMealyMode(const std::string& inputFileName, const std::string& outpu
     std::ifstream input(inputFileName);
     std::vector<std::string> listOfS = FillingList(input);
 
-    // Read table
     std::vector<std::vector<Move>> originTable(listOfS.size());
     std::vector<std::vector<std::string>> tempTable(listOfS.size());
     std::vector<std::string> listOfX;
@@ -105,7 +104,6 @@ void ProcessMealyMode(const std::string& inputFileName, const std::string& outpu
     }
     input.close();
 
-    // Generate names
     std::unordered_map<std::string, std::string> moves1;
     int index1 = 1;
     for (int i = 0; i < listOfS.size(); i++) {
@@ -131,22 +129,18 @@ void ProcessMealyMode(const std::string& inputFileName, const std::string& outpu
     }
     std::unordered_map<std::string, std::string> moves2;
 
-    // Main loop
     bool changes = true;
     while (changes) {
         changes = false;
 
-        // Update table
         for (int i = 0; i < originTable.size(); i++) {
             for (int o = 0; o < originTable[i].size(); o++) {
                 tempTable[i][o] = moves1[originTable[i][o].s];
             }
         }
 
-        // Rewrite moves
         moves2 = ReWriteMoves(moves1, listOfS, tempTable);
 
-        // Check changes
         if (moves1 != moves2) {
             changes = true;
             moves1 = moves2;
@@ -154,7 +148,6 @@ void ProcessMealyMode(const std::string& inputFileName, const std::string& outpu
         }
     }
 
-    // Write output table
     std::ofstream output(outputFileName);
     WritePositions(output, moves1);
 
