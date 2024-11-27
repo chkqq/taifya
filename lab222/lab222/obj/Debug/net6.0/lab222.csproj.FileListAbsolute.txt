@@ -1,0 +1,14 @@
+E:\edu\taifya\lab222\lab222\bin\Debug\net6.0\lab222.exe
+E:\edu\taifya\lab222\lab222\bin\Debug\net6.0\lab222.deps.json
+E:\edu\taifya\lab222\lab222\bin\Debug\net6.0\lab222.runtimeconfig.json
+E:\edu\taifya\lab222\lab222\bin\Debug\net6.0\lab222.dll
+E:\edu\taifya\lab222\lab222\bin\Debug\net6.0\lab222.pdb
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.GeneratedMSBuildEditorConfig.editorconfig
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.AssemblyInfoInputs.cache
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.AssemblyInfo.cs
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.csproj.CoreCompileInputs.cache
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.dll
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\refint\lab222.dll
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.pdb
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\lab222.genruntimeconfig.cache
+E:\edu\taifya\lab222\lab222\obj\Debug\net6.0\ref\lab222.dll
