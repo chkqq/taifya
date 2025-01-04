@@ -1,0 +1,3 @@
+﻿  main.cpp
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: static void __cdecl MachineSaver::Save(class std::basic_ostream<char,struct std::char_traits<char> > &,struct client::Machine const &)" (?Save@MachineSaver@@SAXAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEBUMachine@client@@@Z) в функции main.
+E:\edu\taifyaf\lw3\x64\Debug\lw3.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
