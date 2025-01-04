@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\edu\\taifyaf\\lw3\\",
+  "WorkspaceRootPath": "E:\\edu\\taifya\\lw3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\DSMConverter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\DSMConverter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\MachineSaver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\MachineSaver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\Args.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Args.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\Machine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Machine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\MachineSaver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\MachineSaver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\GrammarParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\DSMConverter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\DSMConverter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\MachineSaver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\MachineSaver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\Args.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Args.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\Machine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Machine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\MachineSaver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\MachineSaver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\GrammarParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\GrammarParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\GrammarParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\GrammarParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\GrammarParser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\ArgsParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\ArgsParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\ArgsParser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\DSMConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\DSMConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\DSMConverter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\GrammarSide.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\GrammarSide.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\GrammarSide.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifyaf\\lw3\\lw3\\Lettering.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|E:\\edu\\taifya\\lw3\\lw3\\Lettering.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{97DAA718-7E12-41A4-8B11-3345710D85E9}|lw3\\lw3.vcxproj|solutionrelative:lw3\\Lettering.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -62,80 +62,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MachineSaver.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\MachineSaver.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\MachineSaver.h",
               "RelativeDocumentMoniker": "lw3\\MachineSaver.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\MachineSaver.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\MachineSaver.h",
               "RelativeToolTip": "lw3\\MachineSaver.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:43:05.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:43:05.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MachineSaver.cpp",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\MachineSaver.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\MachineSaver.cpp",
               "RelativeDocumentMoniker": "lw3\\MachineSaver.cpp",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\MachineSaver.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\MachineSaver.cpp",
               "RelativeToolTip": "lw3\\MachineSaver.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T12:33:44.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:33:44.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Machine.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\Machine.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\Machine.h",
               "RelativeDocumentMoniker": "lw3\\Machine.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\Machine.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\Machine.h",
               "RelativeToolTip": "lw3\\Machine.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:33:08.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:33:08.572Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "GrammarParser.cpp",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\GrammarParser.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\GrammarParser.cpp",
               "RelativeDocumentMoniker": "lw3\\GrammarParser.cpp",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\GrammarParser.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\GrammarParser.cpp",
               "RelativeToolTip": "lw3\\GrammarParser.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T12:32:09.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:32:09.304Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "GrammarParser.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\GrammarParser.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\GrammarParser.h",
               "RelativeDocumentMoniker": "lw3\\GrammarParser.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\GrammarParser.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\GrammarParser.h",
               "RelativeToolTip": "lw3\\GrammarParser.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:31:54.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:31:54.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DSMConverter.cpp",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\DSMConverter.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\DSMConverter.cpp",
               "RelativeDocumentMoniker": "lw3\\DSMConverter.cpp",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\DSMConverter.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\DSMConverter.cpp",
               "RelativeToolTip": "lw3\\DSMConverter.cpp",
               "ViewState": "AgIAAGkAAAAAAAAAAAAQwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -146,87 +141,81 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "DSMConverter.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\DSMConverter.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\DSMConverter.h",
               "RelativeDocumentMoniker": "lw3\\DSMConverter.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\DSMConverter.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\DSMConverter.h",
               "RelativeToolTip": "lw3\\DSMConverter.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:31:00.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:31:00.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Utils.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\Utils.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\Utils.h",
               "RelativeDocumentMoniker": "lw3\\Utils.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\Utils.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\Utils.h",
               "RelativeToolTip": "lw3\\Utils.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:30:31.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:30:31.476Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Lettering.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\Lettering.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\Lettering.h",
               "RelativeDocumentMoniker": "lw3\\Lettering.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\Lettering.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\Lettering.h",
               "RelativeToolTip": "lw3\\Lettering.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:30:11.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:30:11.628Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "GrammarSide.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\GrammarSide.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\GrammarSide.h",
               "RelativeDocumentMoniker": "lw3\\GrammarSide.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\GrammarSide.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\GrammarSide.h",
               "RelativeToolTip": "lw3\\GrammarSide.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:29:42.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:29:42.954Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "ArgsParser.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\ArgsParser.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\ArgsParser.h",
               "RelativeDocumentMoniker": "lw3\\ArgsParser.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\ArgsParser.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\ArgsParser.h",
               "RelativeToolTip": "lw3\\ArgsParser.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:29:11.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:29:11.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Args.h",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\Args.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\Args.h",
               "RelativeDocumentMoniker": "lw3\\Args.h",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\Args.h",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\Args.h",
               "RelativeToolTip": "lw3\\Args.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T12:28:50.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T12:28:50.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "E:\\edu\\taifyaf\\lw3\\lw3\\main.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw3\\lw3\\main.cpp",
               "RelativeDocumentMoniker": "lw3\\main.cpp",
-              "ToolTip": "E:\\edu\\taifyaf\\lw3\\lw3\\main.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw3\\lw3\\main.cpp",
               "RelativeToolTip": "lw3\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

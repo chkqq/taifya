@@ -1,0 +1,11 @@
+﻿  CSVTextParser.cpp
+  DSMConverter.cpp
+  DSMConverter.h
+  EmptyStateRemover.cpp
+  MachineSaver.cpp
+E:\edu\taifyaf\lw4\lw4\MachineSaver.cpp(54,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\edu\taifyaf\lw4\lw4\MachineSaver.cpp(55,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  main.cpp
+  Создание кода...
+x64\Debug\DSMConverter.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+  lw4.vcxproj -> E:\edu\taifyaf\lw4\x64\Debug\lw4.exe
