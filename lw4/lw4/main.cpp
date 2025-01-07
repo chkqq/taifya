@@ -1,58 +1,39 @@
-#include <iostream>
-#include "ArgsParser.h"
-#include "DSMConverter.h"
-#include "MachineSaver.h"
-#include "CSVTextParser.h"
-#include <fstream>
+п»ї	#include <iostream>
+	#include <fstream>
+	#include <vector>
+	#include <string>
+	#include <map>
+	#include <deque>
+	#include <list>
+	#include "Utils.h"
+	#include "FileHandler.h"
+	#include "TransitionHandler.h"
 
-bool PrepareStreams(std::ifstream& input, std::ofstream& output, const Args& args)
-{
-    input.open(args.inputFile);
+	int main(int argc, char* argv[])
+	{
+		if (argc < 3)
+		{
+			std::cout << "Usage: <program> <input.csv> <output.csv>" << std::endl;
+			return 1;
+		}
 
-    if (!input.is_open())
-    {
-        std::cerr << "Input file couldn't be opened: " << args.inputFile << std::endl;
-        return false;
-    }
+		std::ifstream input(argv[1]);
 
-    output.open(args.outputFile);
+		Automata automata = FileHandler::ReadCSV(argv[1]);
 
-    if (!output.is_open())
-    {
-        std::cerr << "Output file couldn't be opened: " << args.outputFile << std::endl;
-        return false;
-    }
+		CollapsedState startState = { automata.states[0].name, automata.states[0].isFinal, { automata.states[0] } };
 
-    return true;
-}
+		std::vector<std::string> args;
+		for (auto arg : automata.args)
+			if (arg != "eps")
+				args.push_back(arg);
 
-int main(int argc, char* argv[])
-{
-    Args args;
-    if (!ArgsParser::Parse(argc, argv, args)) // Учитывается, что ArgsParser::Parse возвращает bool
-    {
-        std::cerr << "Wrong usage. Example: .exe left-type-grammar.txt output.csv" << std::endl;
-        return 1;
-    }
+		std::map<State, std::vector<State>> statesToEpsClosure = TransitionHandler::ComputeEpsilonClosures(automata);
 
-    std::ifstream input;
-    std::ofstream output;
-    if (!PrepareStreams(input, output, args))
-    {
-        return 1;
-    }
+		std::vector<CollapsedState> newProcessedStates;
+		std::vector<NewTransition> newTransitions;
+		TransitionHandler::ProcessStatesAndTransitions(automata, startState, args, statesToEpsClosure, newProcessedStates, newTransitions);
 
-    DSMConverter dsmConverter; // Используем объект вместо `new` для автоматического управления памятью
+		FileHandler::WriteCSV(argv[2], newProcessedStates, newTransitions, args);
 
-    try
-    {
-        MachineSaver::Save(output, dsmConverter.ConvertToDSM(CSVTextParser::GetMachine(input)));
-    }
-    catch (const std::exception& e)
-    {
-        std::cerr << "An error occurred during conversion: " << e.what() << std::endl;
-        return 1;
-    }
-
-    return 0;
-}
+	}
