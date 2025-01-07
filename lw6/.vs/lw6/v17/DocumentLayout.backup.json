@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\edu\\taifya\\lw6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Lexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Lexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Tokenizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Tokenizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\TokenType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\TokenType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\FileHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\FileHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Lexeme.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Lexeme.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Tokenizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Tokenizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\FileHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\FileHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|E:\\edu\\taifya\\lw6\\lw6\\Logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59E04E6B-D91A-4BF8-9C7B-3F44C9A51989}|lw6\\lw6.vcxproj|solutionrelative:lw6\\Logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Logger.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Logger.cpp",
+              "RelativeDocumentMoniker": "lw6\\Logger.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Logger.cpp",
+              "RelativeToolTip": "lw6\\Logger.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-07T14:55:52.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Logger.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Logger.h",
+              "RelativeDocumentMoniker": "lw6\\Logger.h",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Logger.h",
+              "RelativeToolTip": "lw6\\Logger.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T14:55:48.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tokenizer.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Tokenizer.cpp",
+              "RelativeDocumentMoniker": "lw6\\Tokenizer.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Tokenizer.cpp",
+              "RelativeToolTip": "lw6\\Tokenizer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-07T14:55:36.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tokenizer.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Tokenizer.h",
+              "RelativeDocumentMoniker": "lw6\\Tokenizer.h",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Tokenizer.h",
+              "RelativeToolTip": "lw6\\Tokenizer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T14:55:21.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileHandler.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\FileHandler.h",
+              "RelativeDocumentMoniker": "lw6\\FileHandler.h",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\FileHandler.h",
+              "RelativeToolTip": "lw6\\FileHandler.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T14:55:11.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FileHandler.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\FileHandler.cpp",
+              "RelativeDocumentMoniker": "lw6\\FileHandler.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\FileHandler.cpp",
+              "RelativeToolTip": "lw6\\FileHandler.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-07T14:55:02.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lexeme.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Lexeme.h",
+              "RelativeDocumentMoniker": "lw6\\Lexeme.h",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Lexeme.h",
+              "RelativeToolTip": "lw6\\Lexeme.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T14:48:47.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenType.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\TokenType.h",
+              "RelativeDocumentMoniker": "lw6\\TokenType.h",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\TokenType.h",
+              "RelativeToolTip": "lw6\\TokenType.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T14:36:44.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Lexer.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Lexer.cpp",
+              "RelativeDocumentMoniker": "lw6\\Lexer.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Lexer.cpp",
+              "RelativeToolTip": "lw6\\Lexer.cpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-07T14:36:24.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\main.cpp",
+              "RelativeDocumentMoniker": "lw6\\main.cpp",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\main.cpp",
+              "RelativeToolTip": "lw6\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-07T14:36:10.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lexer.h",
+              "DocumentMoniker": "E:\\edu\\taifya\\lw6\\lw6\\Lexer.h",
+              "RelativeDocumentMoniker": "lw6\\Lexer.h",
+              "ToolTip": "E:\\edu\\taifya\\lw6\\lw6\\Lexer.h",
+              "RelativeToolTip": "lw6\\Lexer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-07T14:35:49.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+int a = 5;
+double b = 3.14;
+string name = "John Doe";
+
+if (a > 0) {
+    b = b + a;
+} else {
+    b = 0;
+}
